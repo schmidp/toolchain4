@@ -749,7 +749,7 @@ toolchain_cctools() {
 		message_status "Configuring cctools-iphone..."
 		cd "${BUILD_DIR}/cctools-iphone"
 
-		CFLAGS="-m32" LDFLAGS="-m32" "${CCTOOLS_DIR}"/configure \
+		"${CCTOOLS_DIR}"/configure \
 			--target="${TARGET}" \
 			--prefix="${PREFIX}"
 
